@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output the name of the event that triggered the workflow
-        shell: |
+        run: |
           echo "The job was triggered by event: ${{ github.event_name }}"
           echo "Ref ${{ github.ref }}"
       
